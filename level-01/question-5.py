@@ -22,5 +22,15 @@
 
 def no_teen_sum(a, b, c):
   # CODE GOES HERE
+  result = fix_teen(a)
+  result += fix_teen(b)
+  result += fix_teen(c)
+  return result
 def fix_teen(n):
   # CODE GOES HERE
+  if n ==13 or n ==14 or (n >=17 and n <=19):
+         return 0 
+  return n
+
+result = no_teen_sum(1, 2, 3)
+print(result)
